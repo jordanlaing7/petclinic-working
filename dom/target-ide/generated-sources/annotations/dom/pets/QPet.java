@@ -31,6 +31,8 @@ public class QPet extends org.datanucleus.api.jdo.query.PersistableExpressionImp
     public final ObjectExpression<dom.pets.PetSpecies> species;
     public final dom.owners.QOwner owner;
     public final ObjectExpression<dom.pets.Health> health;
+    public final ObjectExpression<org.joda.time.DateTime> CheckIn;
+    public final ObjectExpression<org.joda.time.DateTime> CheckOut;
     public final ObjectExpression<org.apache.isis.applib.DomainObjectContainer> container;
     public final ObjectExpression<dom.owners.Owners> owners;
 
@@ -48,6 +50,8 @@ public class QPet extends org.datanucleus.api.jdo.query.PersistableExpressionImp
             this.owner = null;
         }
         this.health = new ObjectExpressionImpl<dom.pets.Health>(this, "health");
+        this.CheckIn = new ObjectExpressionImpl<org.joda.time.DateTime>(this, "CheckIn");
+        this.CheckOut = new ObjectExpressionImpl<org.joda.time.DateTime>(this, "CheckOut");
         this.container = new ObjectExpressionImpl<org.apache.isis.applib.DomainObjectContainer>(this, "container");
         this.owners = new ObjectExpressionImpl<dom.owners.Owners>(this, "owners");
     }
@@ -59,6 +63,8 @@ public class QPet extends org.datanucleus.api.jdo.query.PersistableExpressionImp
         this.species = new ObjectExpressionImpl<dom.pets.PetSpecies>(this, "species");
         this.owner = new dom.owners.QOwner(this, "owner", 5);
         this.health = new ObjectExpressionImpl<dom.pets.Health>(this, "health");
+        this.CheckIn = new ObjectExpressionImpl<org.joda.time.DateTime>(this, "CheckIn");
+        this.CheckOut = new ObjectExpressionImpl<org.joda.time.DateTime>(this, "CheckOut");
         this.container = new ObjectExpressionImpl<org.apache.isis.applib.DomainObjectContainer>(this, "container");
         this.owners = new ObjectExpressionImpl<dom.owners.Owners>(this, "owners");
     }

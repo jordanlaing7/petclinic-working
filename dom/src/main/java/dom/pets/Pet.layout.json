@@ -26,6 +26,12 @@
             "health": {}
           }
         },
+        "Dates": {
+          "members": {
+            "checkin": {},
+            "checkout": {}
+          }
+        },
         "Owner": {
           "members": {
             "owner": {}

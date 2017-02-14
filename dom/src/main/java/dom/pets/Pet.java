@@ -23,6 +23,8 @@ import java.util.List;
 import javax.jdo.annotations.IdentityType;
 import javax.jdo.annotations.VersionStrategy;
 
+import org.joda.time.DateTime;
+
 import org.apache.isis.applib.DomainObjectContainer;
 import org.apache.isis.applib.annotation.BookmarkPolicy;
 import org.apache.isis.applib.annotation.DomainObject;
@@ -150,6 +152,31 @@ public class Pet implements Comparable<Pet> {
 
 	// endregion
 
+	private DateTime CheckIn;
+	@javax.jdo.annotations.Column(allowsNull = "true")
+	@MemberOrder(sequence = "5")
+	public DateTime getCheckIn() {
+		return CheckIn;
+	}
+
+	public void setCheckIn(final DateTime d) {
+		this.CheckIn = d;
+	}
+
+	private DateTime CheckOut;
+	@javax.jdo.annotations.Column(allowsNull = "true")
+	@MemberOrder(sequence = "6")
+	public DateTime getCheckOut() {
+		return CheckOut;
+	}
+
+	public void setCheckOut(final DateTime d) {
+		this.CheckOut = d;
+	}
+
+
+	
+
 	// region > injected services
 
 	@javax.inject.Inject
@@ -160,4 +187,7 @@ public class Pet implements Comparable<Pet> {
 	private Owners owners;
 	// endregion
 
+
+
 }
+
