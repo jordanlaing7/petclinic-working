@@ -174,8 +174,15 @@ public class Pet implements Comparable<Pet> {
 		this.CheckOut = d;
 	}
 
+	private String notes;
+	@javax.jdo.annotations.Column(allowsNull = "true")
+	@MemberOrder(sequence = "7")
+	public String getNotes(){return notes;}
 
-	
+	public void setNotes(final String note)
+	{
+		this.notes = note;
+	}
 
 	// region > injected services
 

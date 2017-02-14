@@ -23,7 +23,8 @@
           "members": {
             "name": {},
             "species": {},
-            "health": {}
+            "health": {},
+            "notes": {}
           }
         },
         "Dates": {
