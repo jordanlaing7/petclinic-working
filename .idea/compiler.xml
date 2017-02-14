@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Annotation profile for PetClinic App" enabled="true">
+        <sourceOutputDir name="target-ide/generated-sources/annotations" />
+        <sourceTestOutputDir name="target-ide/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="petclinic-dom" />
+        <module name="petclinic-fixture" />
+        <module name="petclinic-webapp" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="petclinic" target="1.7" />
+      <module name="petclinic-dom" target="1.7" />
+      <module name="petclinic-fixture" target="1.7" />
+      <module name="petclinic-webapp" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

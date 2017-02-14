@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/petclinic.iml" filepath="$PROJECT_DIR$/petclinic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dom/petclinic-dom.iml" filepath="$PROJECT_DIR$/dom/petclinic-dom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fixture/petclinic-fixture.iml" filepath="$PROJECT_DIR$/fixture/petclinic-fixture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webapp/petclinic-webapp.iml" filepath="$PROJECT_DIR$/webapp/petclinic-webapp.iml" />
+    </modules>
+  </component>
+</project>
